@@ -361,6 +361,15 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
   <div class="header-rule"></div>
 </header>
 
+<!-- ══ SHARE BAR ══ -->
+<div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 20px;background:#fff;border-bottom:1px solid #e0e0de;flex-wrap:wrap;">
+  <span style="font-size:12px;color:#888;margin-right:4px;">Share this page:</span>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fffawoodlandpreservation.github.io%2FTimeline" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;background:#1877f2;"><i class="ti ti-brand-facebook" aria-hidden="true"></i> Facebook</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fffawoodlandpreservation.github.io%2FTimeline&text=A+detailed+timeline+of+events+relating+to+the+proposed+development+of+Frimley+Fuel+Allotments" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;background:#000;"><i class="ti ti-brand-x" aria-hidden="true"></i> X</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fffawoodlandpreservation.github.io%2FTimeline" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;background:#0a66c2;"><i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn</a>
+  <a href="https://wa.me/?text=A+detailed+timeline+of+events+relating+to+the+proposed+development+of+Frimley+Fuel+Allotments%3A+https%3A%2F%2Fffawoodlandpreservation.github.io%2FTimeline" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;background:#25d366;"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+</div>
+
 <!-- ══ INTRO ══ -->
 <div class="intro-wrap">
   <div class="intro-box">
@@ -402,21 +411,27 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
   </div>
 </div>
 
-<!-- Year colour legend -->
-<div class="year-legend">
-  <div class="li y2021"><div class="li-dot"></div>2021</div>
-  <div class="li y2022"><div class="li-dot"></div>2022</div>
-  <div class="li y2023"><div class="li-dot"></div>2023</div>
-  <div class="li y2024"><div class="li-dot"></div>2024</div>
-  <div class="li y2025"><div class="li-dot"></div>2025</div>
-  <div class="li y2026"><div class="li-dot"></div>2026</div>
+<!-- Year colour legend + sort -->
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:0 8px;">
+  <div class="year-legend" style="margin:0;">
+    <a class="li y2021" href="#section-2021" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2021</a>
+    <a class="li y2022" href="#section-2022" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2022</a>
+    <a class="li y2023" href="#section-2023" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2023</a>
+    <a class="li y2024" href="#section-2024" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2024</a>
+    <a class="li y2025" href="#section-2025" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2025</a>
+    <a class="li y2026" href="#section-2026" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2026</a>
+  </div>
+  <button id="sort-btn" onclick="toggleSort()" style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;border:1px solid #d5d5d0;background:#fff;font-size:13px;color:#2c2c2c;cursor:pointer;font-family:inherit;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="9" y2="18"/></svg>
+    <span id="sort-label">Oldest first</span>
+  </button>
 </div>
 
 <!-- ══ TIMELINE ══ -->
 <div class="timeline">
 
 <!-- ═══ 2021 ═══ -->
-<div class="year-section y2021">
+<div id="section-2021" class="year-section y2021">
   <div class="year-banner"><span>2021</span></div>
 
   <div class="entry left">
@@ -441,7 +456,7 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
 </div><!-- /y2021 -->
 
 <!-- ═══ 2022 ═══ -->
-<div class="year-section y2022">
+<div id="section-2022" class="year-section y2022">
   <div class="year-banner"><span>2022</span></div>
 
   <div class="entry left">
@@ -476,7 +491,7 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
 </div><!-- /y2022 -->
 
 <!-- ═══ 2023 ═══ -->
-<div class="year-section y2023">
+<div id="section-2023" class="year-section y2023">
   <div class="year-banner"><span>2023</span></div>
 
   <div class="entry right">
@@ -571,7 +586,7 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
 </div><!-- /y2023 -->
 
 <!-- ═══ 2024 ═══ -->
-<div class="year-section y2024">
+<div id="section-2024" class="year-section y2024">
   <div class="year-banner"><span>2024</span></div>
 
   <div class="entry left">
@@ -696,7 +711,7 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
 </div><!-- /y2024 -->
 
 <!-- ═══ 2025 ═══ -->
-<div class="year-section y2025">
+<div id="section-2025" class="year-section y2025">
   <div class="year-banner"><span>2025</span></div>
 
   <div class="entry left">
@@ -821,7 +836,7 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
 </div><!-- /y2025 -->
 
 <!-- ═══ 2026 ═══ -->
-<div class="year-section y2026">
+<div id="section-2026" class="year-section y2026">
   <div class="year-banner"><span>2026</span></div>
 
   <div class="entry left">
@@ -1508,6 +1523,40 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
   <p>Updated October 2026</p>
   <p style="margin-top:4px;font-size:0.7rem;">Compiled from publicly available sources only. Every entry is sourced.</p>
 </footer>
+
+<script>
+var sortedNew = false;
+
+function toggleSort() {
+  var timeline = document.querySelector('.timeline');
+  var sections = Array.from(timeline.querySelectorAll('.year-section'));
+  var btn = document.getElementById('sort-btn');
+  var label = document.getElementById('sort-label');
+
+  sortedNew = !sortedNew;
+
+  // Reverse year sections
+  sections.reverse().forEach(function(s) { timeline.appendChild(s); });
+
+  // Reverse entries within each year section
+  sections.forEach(function(section) {
+    var entries = Array.from(section.querySelectorAll('.entry'));
+    entries.reverse().forEach(function(e) { section.appendChild(e); });
+  });
+
+  if (sortedNew) {
+    label.textContent = 'Newest first';
+    btn.style.background = '#2c2c2c';
+    btn.style.color = '#fff';
+    btn.style.borderColor = '#2c2c2c';
+  } else {
+    label.textContent = 'Oldest first';
+    btn.style.background = '#fff';
+    btn.style.color = '#2c2c2c';
+    btn.style.borderColor = '#d5d5d0';
+  }
+}
+</script>
 
 </body>
 </html>
