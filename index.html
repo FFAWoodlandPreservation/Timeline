@@ -212,7 +212,7 @@ header h1 strong {
 /* ── ENTRY ROW ── */
 .entry {
   display: grid;
-  grid-template-columns: 1fr 88px 1fr;
+  grid-template-columns: minmax(0,1fr) 88px minmax(0,1fr);
   align-items: start;
   position: relative;
   z-index: 1;
@@ -263,7 +263,7 @@ header h1 strong {
 .entry-body { font-size: 0.86rem; color: #3a3a3a; line-height: 1.62; }
 .entry-body strong { color: #111; }
 .entry-body em { color: #555; }
-.entry-source { font-size: 0.69rem; color: #c0c0c0; font-style:italic; margin-top:5px; line-height:1.35; }
+.entry-source { font-size: 0.69rem; color: #c0c0c0; font-style:italic; margin-top:5px; line-height:1.35; overflow-wrap: break-word; word-break: break-word; }
 
 /* LEFT: date left, content right */
 .entry.left .date-panel    { grid-column:1; grid-row:1; text-align:right; padding-right:16px; }
@@ -1066,7 +1066,7 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
     <div class="content-panel">
       <div class="entry-title">Thames Valley ICB Board affirms statutory duty to involve residents — FHFT Delegation Agreement approved but withheld from public pack</div>
       <div class="entry-body">The Thames Valley Integrated Care Board (ICB) — which replaced NHS Frimley Integrated Care Board and NHS BOB ICB on 1 April 2026 — considers the Frimley Park new hospital engagement programme at its July 2026 board meeting. The board's own papers state that <strong>"the ICB holds statutory responsibility for the duty to involve"</strong> — language directly relevant to the Gunning Principles legal test for lawful public consultation.<br><br>Social listening data from 28 June to 4 July 2026 recorded 4,552 social media engagements and 76,821 impressions; sentiment was 19% negative, 60% neutral, and 21% positive. The leading public concern was the environment. The Chief Executive's report notes only that the preferred site was announced <em>"in early June"</em> — understating the public reaction the data records.<br><br>Lance McCarthy, Chief Executive of FHFT, sits on the Thames Valley ICB Board as a Partner Member and declared his interest at the meeting. The ICB is simultaneously responsible for scrutinising and holding FHFT to account on the same engagement programme.<br><br>Item 12 of the agenda listed approval of the FHFT Delegation Agreement — the formal document governing the division of responsibilities between the ICB and FHFT for the new hospital programme. The paper was marked "to follow" and withheld from the published board pack. No subsequently published version has been located.</div>
-      <div class="entry-source">Source: Thames Valley ICB Board meeting papers, 15 July 2026 (thamesvalley.icb.nhs.uk)</div>
+      <div class="entry-source">Sources: Thames Valley ICB Board meeting papers, 15 July 2026 (thamesvalley.icb.nhs.uk); FHFT New Frimley Park Hospital FAQs, last reviewed 19 August 2026 (fhft.nhs.uk/new-frimley-park-hospital/faqs)</div>
     </div>
   </div>
 
@@ -1228,6 +1228,16 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
   </div>
 
   <div class="entry left">
+    <div class="date-panel"><div class="date-text">1 August 2026</div></div>
+    <div class="node-col"><div class="node"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div></div>
+    <div class="content-panel">
+      <div class="entry-title">FHFT publishes Easy Read engagement document containing misleading claims about proposed hospital site</div>
+      <div class="entry-body">As part of its public engagement on the proposed new Frimley Park Hospital, FHFT publishes an Easy Read document (produced by Easy Read UK) intended to make the consultation accessible to people with learning disabilities and others who rely on simplified information. Easy Read documents are image-led by design; readers are expected to understand the content primarily through pictures rather than text.<br><br>Analysis of the document reveals a pattern of promotional rather than factually accurate content, raising serious questions about FHFT's compliance with the Public Sector Equality Duty and the Easy Read quality standard.<br><br><strong>"Only 1 of the places is good enough to build a new hospital. It is part of Pine Ridge Golf Club."</strong> This claim is accompanied by an image of a man in a builder's hard hat giving a thumbs-up in front of open, treeless land. The statement directly contradicts FHFT's own Site Selection Report, which assessed 18 potential sites; the Frimley Fuel Allotments / Pine Ridge Golf Club site ranked third of four priority sites — it was not the uniquely viable option the Easy Read presents. The accompanying image also misrepresents the actual character of the site, which is predominantly mature woodland within a designated Site of Nature Conservation Importance. No trees are visible in the image. A reader relying on this document would have no indication that the proposed development involves the felling of mature woodland on protected land. The site is referred to throughout only as "Pine Ridge Golf Club" — the Frimley Fuel Allotments charity, which owns the land, is never mentioned.<br><br><strong>"We will protect the plants and animals that live in the area."</strong> The document makes no reference to the woodland character of the site or to its SNCI designation. Presenting the loss of mature, ecologically significant woodland as straightforward "protection" of wildlife is misleading — development of this nature invariably involves habitat destruction that cannot simply be reversed.<br><br><strong>The document carries an outdated deadline.</strong> It directs readers to respond by "Sunday 13th September 2026" — the original consultation close date. The deadline was subsequently extended to 12 October 2026, but the Easy Read document is never updated. People with learning disabilities relying on this accessible version would have believed the consultation was already closed.<br><br><strong>The consultation questionnaire itself is not accessible.</strong> The document explicitly states: "The survey is not in easy read." FHFT produced an accessible document explaining an inaccessible engagement process, without providing an accessible alternative participation mechanism. The Equality Act 2010 requires public bodies to make reasonable adjustments so that disabled people can participate on equal terms; directing Easy Read readers to a questionnaire that is not in Easy Read does not meet this standard. These concerns are later raised directly with FHFT by HWRA at the 7 September meeting.</div>
+      <div class="entry-source">Source: FHFT Easy Read information — New Frimley Park Hospital, ERUK v4 (fhft.nhs.uk/application/files/8817/8160/2944/Easy_Read_information_New_Frimley_Park_Hospital__-_ERUK_v4s.pdf), published during the engagement period August–October 2026</div>
+    </div>
+  </div>
+
+  <div class="entry right">
     <div class="content-panel">
       <div class="entry-title">ITV Meridian: McCarthy confirms transport analysis begins after site announcement — PM Burnham called upon to review</div>
       <div class="entry-body">ITV Meridian broadcasts regional coverage of community opposition to the FFA development, calling on Prime Minister Andy Burnham to review the site decision. In a critical on-record admission, FHFT CEO Lance McCarthy states: <strong>"Now that we've announced the preferred site we can get on and undertake the detailed traffic and transport analysis"</strong> — confirming that detailed transport assessment had not been completed at the point of the preferred site announcement. He also concedes that <strong>"the current road infrastructure…is actually very poor."</strong> This sits alongside JHOSC Chair Cllr Trefor Hogg's admission in his letter to Dr Pinkerton three days earlier that traffic around the schools is an <strong>"unacceptable situation"</strong> requiring investment to change. Both the FHFT CEO and the JHOSC Chairman are now publicly on record conceding that the existing road infrastructure is inadequate — yet the no-consultation determination, signed off by Hogg in July 2025, concluded there would be "no negative impact on access," before any transport evidence had been gathered. Dr Pinkerton MP calls for full transparent costing of all infrastructure required to make the site viable — road widening, motorway junctions, dual carriageway bridges — arguing that once fully costed, the site becomes economically unviable.</div>
@@ -1237,7 +1247,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     <div class="date-panel"><div class="date-text">3 August 2026</div></div>
   </div>
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">3 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-news" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1248,7 +1258,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
   </div>
 
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="date-panel"><div class="date-text">3 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-camera" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1257,7 +1267,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
       <div class="entry-source">Source: Sergio Manaut, El Cronista (Spain), 3 August 2026 (cronista.com/espana/economia-finanzas/sacyr-construira-un-nuevo-hospital-en-Londres)</div>
     </div>
   </div>
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">5 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-shield-half" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1267,7 +1277,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     </div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="date-panel"><div class="date-text">6 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-file-alert" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1277,7 +1287,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     </div>
   </div>
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">12 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-shield-half" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1287,7 +1297,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     </div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="content-panel">
       <div class="entry-title">JHOSC Chair responds — redefines "access," distances himself from no-consultation decision, and deploys urgency argument</div>
       <div class="entry-body">Cllr Trefor Hogg publishes a letter addressed to Dr Al Pinkerton MP on his Facebook page, responding to Pinkerton's second formal letter of 12 August 2026. The letter does not answer any of Pinkerton's five numbered questions directly. Its arguments rest on four distinct claims, each of which carries significant problems.<br><br><strong>"Access" meant patient access to healthcare, not road access.</strong> Hogg states that when the JHOSC concluded in July 2025 that there would be <strong>"no negative impact on access,"</strong> the word <strong>"access"</strong> referred to patients reaching emergency and specialist healthcare — not to traffic or highway conditions, which he says are "separate questions to be assessed through the appropriate transport and planning processes." This is the first time this distinction has been drawn. The JHOSC's own September 2024 meeting — chaired by Hogg — received a transport assessment finding that junctions near the preferred sites were "at capacity and would need significant infrastructure upgrades." That finding was before the committee ten months before the July 2025 letter. If the "access" conclusion concerned only patient journeys in the abstract, there was no need to caveat it against highway data the committee already held. The redefinition appears designed retrospectively to insulate the July 2025 conclusion from the transport evidence that now contradicts it.<br><br><strong>"It was an NHS decision, not a JHOSC decision."</strong> Hogg frames the no-consultation determination as "an NHS decision, made in accordance with the relevant statutory guidance" — and says that Pinkerton was "briefed by Frimley ICB" on it in May 2025. This framing distances the JHOSC from the decision. It does not explain why the Chair and Vice-Chair then wrote a letter explicitly endorsing that determination, or why that letter was cited by the ICB Board as supporting evidence for its formal resolution of 22 July 2025. The letter's own existence is what placed the JHOSC at the centre of the governance question.<br><br><strong>A new disclosure: full JHOSC briefed on "the leading site" in November 2025.</strong> Hogg states that the JHOSC <strong>"were advised of the leading site identified by the NHS process in a confidential briefing in November 2025."</strong> This is the first time a full-committee November 2025 briefing has been disclosed. It raises a further question: if the full committee could be briefed confidentially in November 2025 on the leading site, why were several members able to tell Pinkerton they had no knowledge of the private June 2025 briefing or the July 2025 letter? The November 2025 briefing appears to have been a different, later event from the June 2025 briefing attended only by the Chair and Vice-Chair.<br><br><strong>The site "only became the preferred option in May 2026."</strong> Hogg now gives a specific date — <strong>May 2026</strong> — for when the FFA became the preferred site, following "further selection and commercial process." This is his <strong>third different account</strong>: his 30 July 2026 letter tied it to option negotiations; his Facebook post accompanying this letter says the site "only became the preferred option" after further process. Neither account is consistent with JHOSC minutes from May 2024 and September 2024 — both produced under Hogg's chairmanship — which used "the preferred site" in the singular, or with his own July 2025 letter referring to "plans and preferred location" already under private review.<br><br><strong>The urgency argument.</strong> Hogg states the replacement hospital "may not be available until 2034, against a Government deadline of 2035 for removing RAAC from the NHS estate," leaving "very little margin for slippage." The date has shifted: previous statements referred to a 2030 target, which slipped to 2032–33. The independent Mott MacDonald assessment published in December 2025 confirmed that Frimley Park could remain operational with appropriate management to "2030 plus ten years." The urgency argument is being used to foreclose the governance questions Pinkerton has raised, rather than to answer them.</div>
@@ -1296,7 +1306,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     <div class="node-col"><div class="node"><i class="ti ti-circle-x" aria-hidden="true"></i></div></div>
     <div class="date-panel"><div class="date-text">13 August 2026</div></div>
   </div>
-  <div class="entry right">
+  <div class="entry left">
     <div class="content-panel">
       <div class="entry-title">FHFT awards £6.6m design contract for "greenfield site" — land not yet purchased, business case not yet approved</div>
       <div class="entry-body">FHFT awards a contract worth £6,616,963 to Arcadis Consulting (UK) Ltd for Architect Led Design Team (ALDT) services on the New Frimley Park Hospital (NFPH) programme. The contract is procured via the National Health Service Shared Business Services Healthcare Planning Construction Consultancy and Ancillary Services (NHS SBS HPCCAS) framework, with only three tenders received.<br><br>The contract scope covers architectural design from Royal Institute of British Architects (RIBA) Stage 2 (Concept Design) through to RIBA Stage 3 (Developed Design) — the stages that produce the detailed design submitted for planning permission. The published contract notice describes the project explicitly as a <strong>"greenfield site"</strong> development.<br><br>The significance lies in what had not happened by 13 August 2026. In FHFT's own words, published on 16 June 2026 in its preferred site announcement:<br><br><em>"<strong>Frimley Health has not purchased the land, and no final decisions have been made.</strong> An agreement is in place that allows further technical work and engagement to take place as plans progress further. Any decision to purchase the land will need approval from the Department of Health and Social Care through the standard business case approvals process."</em><br><br>FHFT's own engagement timeline confirmed that a planning application was not expected until autumn 2027, and that detailed Environmental Impact Assessment (EIA) work on traffic, transport and ecology would only follow the preferred site announcement. The Frimley Fuel Allotments (FFA) is a registered charity (number 1161717); FHFT has no power to compel a sale. <strong>A £6.6m commitment to detailed architectural design work for a specific greenfield configuration — over a year before any planned planning application — is a significant programme commitment made in advance of land acquisition, planning consent, and DHSC business case approval.</strong></div>
@@ -1306,7 +1316,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     <div class="date-panel"><div class="date-text">13 August 2026</div></div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="content-panel">
       <div class="entry-title">Pinkerton writes formally to Surrey County Council (SCC) Monitoring Officer — raising conduct concerns about the Joint Health Overview and Scrutiny Committee (JHOSC) scrutiny process</div>
       <div class="entry-body">Dr Al Pinkerton MP (Member of Parliament for Surrey Heath) writes to the Monitoring Officer at Surrey County Council (SCC) setting out concerns about the conduct of the JHOSC scrutiny process for the Frimley Park Hospital rebuild. The letter precedes — and is separate from — any formal Code of Conduct referral by community groups. Its existence means the Monitoring Officer is already in receipt of MP-level correspondence on JHOSC conduct before any residents' association referral is submitted.</div>
@@ -1316,7 +1326,7 @@ The Trust's own sensitivity analysis confirmed that no reasonable reweighting of
     <div class="date-panel"><div class="date-text">17 August 2026</div></div>
   </div>
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">19 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-building-hospital" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1330,7 +1340,7 @@ The page also states that the current site rebuild <strong>"would not be able to
     </div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="content-panel">
       <div class="entry-title">JHOSC Chair distributes FHFT's engagement FAQ to constituents — including claim of "Government's 2035 RAAC deadline"</div>
       <div class="entry-body">In his ward newsletter of 22 August 2026, <strong>Cllr Trefor Hogg</strong>, Chairman of the Joint Health and Overview Scrutiny Committee (JHOSC), reproduces the full text of Frimley Health NHS Foundation Trust's (FHFT's) engagement FAQ verbatim and without editorial challenge. The FAQ includes the claim that rebuilding on the existing hospital site would mean the Trust <em>"would not be able to deliver a new hospital in time to meet the Government's 2035 RAAC deadline."</em><br><br>No government document establishes 2035 as a Reinforced Autoclaved Aerated Concrete (RAAC) removal deadline. FHFT's own RAAC information page states the government's position as <em>"the Government's requirement to remove RAAC constructed buildings for 2030."</em> The government's own New Hospital Programme (NHP) Annual Report 2025–26, published six weeks before the newsletter on 8 July 2026, confirmed that the seven RAAC hospitals — including Frimley Park — are <em>"deemed safe to remain open beyond 2030 with appropriate mitigations in place."</em> The independent Mott MacDonald assessment commissioned by the Department of Health and Social Care (published December 2025) confirmed that Frimley Park's RAAC maintenance is effective and serviceable beyond 2030. The "2035 RAAC deadline" appears in FHFT's engagement materials only and in no government document.<br><br>By distributing FHFT's engagement content under his own name to ward newsletter subscribers, the JHOSC Chairman — whose statutory role is to scrutinise the Trust's decisions — amplified them instead as ward intelligence. The "2035 RAAC deadline" is central to FHFT's argument that rebuilding on the existing site was not viable, which in turn underpins the no-consultation determination of July 2025. The scrutiny chairman is distributing, without challenge, the core urgency argument that forecloses scrutiny of the decision he is charged with scrutinising.</div>
@@ -1340,7 +1350,7 @@ The page also states that the current site rebuild <strong>"would not be able to
     <div class="date-panel"><div class="date-text">22 August 2026</div></div>
   </div>
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">25 August 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-mail" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1351,7 +1361,7 @@ The page also states that the current site rebuild <strong>"would not be able to
   </div>
 
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="content-panel">
       <div class="entry-title">JHOSC Chair's newsletter portrays RAAC maintenance as a "heroic" struggle — directly contradicting government's own safety assessment</div>
       <div class="entry-body">In his ward newsletter of 29 August 2026, <strong>Cllr Trefor Hogg</strong> writes that the thirty-year estimated lifespan of Frimley Park Hospital's Reinforced Autoclaved Aerated Concrete (RAAC) structures <strong><em>"ran out around 2004,"</em></strong> and describes current structural maintenance efforts as <strong><em>"heroic."</em></strong> He warns that the hospital will not be replaced until 2032/33 — <em>"some thirty years after the expected end of life."</em><br><br>This framing is directly contradicted by the government's own evidence. The New Hospital Programme (NHP) Annual Report 2025–26, published by the Department of Health and Social Care on 8 July 2026 — seven weeks before the newsletter — states the seven RAAC hospitals, including Frimley Park, are <strong><em>"deemed safe to remain open beyond 2030 with appropriate mitigations in place."</em></strong> The independent Mott MacDonald assessment commissioned by DHSC (published December 2025) confirmed the maintenance programme is <strong><em>"effective and suitable to keep services and people safe beyond 2030"</em></strong> — an assessment directly at odds with a building whose lifespan "ran out around 2004."<br><br>The same newsletter also contains a partisan political attack on Dr Al Pinkerton MP's parliamentary record on pensions, directing ward residents to write to him to complain. It is published exactly one month after Pinkerton's formal five-question challenge to Hogg over the no-consultation determination. A JHOSC Chairman's ward newsletter combining an urgency narrative aligned with the Trust's public engagement position, a factual claim contradicted by government documents, and a call for constituents to lobby the MP who is challenging his conduct is difficult to reconcile with the independent scrutiny function the role requires.</div>
@@ -1362,7 +1372,7 @@ The page also states that the current site rebuild <strong>"would not be able to
   </div>
 
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">2 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-lungs" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1376,7 +1386,7 @@ FHFT has separately confirmed that detailed Environmental Impact Assessment work
     </div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="content-panel">
       <div class="entry-title">FHFT declines FOI request seeking evidence of ecological, tree and environmental assessments at proposed development site</div>
       <div class="entry-body">In response to a Freedom of Information (FOI) request (reference FOI 0624-26) received on 14 July 2026, FHFT withholds information about contracts and associated work relating to ecological surveys, biodiversity assessments, tree assessments, wildlife surveys, flood risk, heritage, air quality and protected species at the proposed new hospital site. The Trust does not confirm whether any such surveys have been commissioned at all.
@@ -1391,7 +1401,7 @@ The information withheld covers precisely the subjects most relevant to the prop
   </div>
 
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">7 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-speakerphone" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1413,7 +1423,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
     </div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="date-panel"><div class="date-text">7 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-users" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1424,7 +1434,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
   </div>
 
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">12 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-walk" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1435,7 +1445,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
   </div>
 
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="date-panel"><div class="date-text">18 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1445,7 +1455,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
     </div>
   </div>
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">21 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-mail" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1456,7 +1466,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
   </div>
 
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="date-panel"><div class="date-text">22 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-accessible" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1466,7 +1476,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
     </div>
   </div>
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">22 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-speakerphone" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1476,7 +1486,7 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
     </div>
   </div>
 
-  <div class="entry left">
+  <div class="entry right">
     <div class="date-panel"><div class="date-text">26 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-eye-off" aria-hidden="true"></i></div></div>
     <div class="content-panel">
@@ -1487,13 +1497,24 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
   </div>
 
 
-  <div class="entry right">
+  <div class="entry left">
     <div class="date-panel"><div class="date-text">29 September 2026</div></div>
     <div class="node-col"><div class="node"><i class="ti ti-speakerphone" aria-hidden="true"></i></div></div>
     <div class="content-panel">
       <div class="entry-title">CEO Facebook reel responds to &ldquo;key issues raised&rdquo; — transcript reveals five claims that warrant scrutiny</div>
       <div class="entry-body">FHFT Chief Executive Lance McCarthy publishes a Facebook reel responding to &ldquo;key issues raised&rdquo; about the proposed new Frimley Park Hospital. Analysis of the verbatim transcript reveals a number of claims that warrant scrutiny.<br><br><strong>False dichotomy on the current site.</strong> McCarthy claims the alternative is being &ldquo;patched up for the next five&rdquo; years, but FHFT has never published a genuine assessment of a full rebuild on the existing site, making the comparison unsubstantiated.<br><br><strong>Unconfirmed funding presented as secured.</strong> McCarthy states the hospital is &ldquo;backed by over one and a half billion pounds of government investment.&rdquo; NHP funding is conditional on an approved business case; no funding agreement has been signed.<br><br><strong>&ldquo;Independently assured&rdquo; process &mdash; assured by whom?</strong> McCarthy claims the site selection followed an &ldquo;independently assured process,&rdquo; but no assurance report has been published.<br><br><strong>&ldquo;Closer to home&rdquo; is geographically misleading.</strong> The care-closer-to-home model is NHS-wide policy and applies regardless of hospital location. Relocating the acute hospital to FHFT&rsquo;s preferred location would increase travel distances for significant parts of the catchment population.<br><br><strong>Predetermined outcome.</strong> McCarthy states FHFT wants feedback on &ldquo;how we will deliver it well&rdquo; &mdash; not whether to proceed. FHFT has billed this as an engagement exercise rather than a formal consultation, meaning it carries no statutory obligations; but the framing confirms the decision is treated as already made.</div>
       <div class="entry-source">Source: FHFT Facebook, 29 September 2026</div>
+    </div>
+  </div>
+
+
+  <div class="entry right">
+    <div class="date-panel"><div class="date-text">7 October 2026</div></div>
+    <div class="node-col"><div class="node"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div></div>
+    <div class="content-panel">
+      <div class="entry-title">FHFT's final engagement email confirms ORS will "not make recommendations or decisions" — directly contradicting FAQ assurance that site choice is "not final"</div>
+      <div class="entry-body">Four days before the engagement deadline, FHFT distributes an email summarising how responses will be handled. The email confirms that Opinion Research Services (ORS) "will prepare an independent report" — but that it "will describe the feedback received but will not make recommendations or decisions." The three stated uses of feedback are to "refine and improve proposals," "identify where mitigation may be needed," and "inform the next stages of planning and decision making." None of those uses encompasses a reconsideration of the site.<br><br>This stands in direct contradiction to FHFT's own FAQ, which states in response to the question "Is this our final decision?": <em>"Identifying a proposed location does not mean decisions are final... your feedback will help shape how plans continue to develop."</em> The FAQ assures the public that the site selection remains open to change. The engagement email confirms that ORS cannot change it.<br><br>The email also introduces a "Jargon Buster" explaining the Green Book and the Five Case Model — the HM Treasury framework governing public investment decisions. Under the Five Case Model, an economic case must demonstrate the selected option represents best value, and a financial case must confirm funding is secured. FHFT's own Site Selection Report shows the Frimley Fuel Allotments ranked third of four priority sites. The construction contractor was signed in July 2026, the design contract awarded in August 2026, and no business case has yet been approved — yet funding is described in FHFT communications as "backed by over £1.5bn of government investment." Introducing the Green Book framework as reassurance at the close of the engagement period draws attention to each of these unresolved tensions.</div>
+      <div class="entry-source">Sources: FHFT email to members, 7 October 2026; FHFT FAQ page, fhft.nhs.uk ("Is this our final decision?"); FHFT webinar, 7 September 2026; Sell2Wales contract notice AUG649523 (Arcadis, £6,616,963), August 2026</div>
     </div>
   </div>
 
