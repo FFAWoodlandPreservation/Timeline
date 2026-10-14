@@ -435,8 +435,8 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
   </div>
 </div>
 
-<!-- Year colour legend + sort -->
-<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:0 8px;">
+<!-- Year colour legend + sort — sticky bar -->
+<div id="sticky-nav" style="position:sticky;top:0;z-index:200;background:#f6f7f5;border-bottom:1px solid #ddddd8;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:8px 16px;">
   <div class="year-legend" style="margin:0;">
     <a class="li y2021" href="#section-2021" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2021</a>
     <a class="li y2022" href="#section-2022" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2022</a>
@@ -445,8 +445,8 @@ footer a { color: rgba(255,255,255,0.65); text-decoration:none; }
     <a class="li y2025" href="#section-2025" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2025</a>
     <a class="li y2026" href="#section-2026" style="text-decoration:none;cursor:pointer;"><div class="li-dot"></div>2026</a>
   </div>
-  <button id="sort-btn" onclick="toggleSort()" style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;border:1px solid #d5d5d0;background:#fff;font-size:13px;color:#2c2c2c;cursor:pointer;font-family:inherit;">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="9" y2="18"/></svg>
+  <button id="sort-btn" onclick="toggleSort()" style="display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:20px;border:1.5px solid #5ab87a;background:#fff;font-size:13px;color:#2c2c2c;cursor:pointer;font-family:inherit;font-weight:600;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5ab87a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="9" y2="18"/></svg>
     <span id="sort-label">Oldest first</span>
   </button>
 </div>
@@ -1562,6 +1562,17 @@ Throughout the event the Trust refers to the site as <strong>"Pine Ridge"</stron
     </div>
   </div>
 
+
+  <div class="entry left">
+    <div class="date-panel"><div class="date-text">13 October 2026</div></div>
+    <div class="node-col"><div class="node"><i class="ti ti-scale" aria-hidden="true"></i></div></div>
+    <div class="content-panel">
+      <div class="entry-title">ICO rules FHFT breached environmental information law &#8212; on the day the engagement closes</div>
+      <div class="entry-body">The Information Commissioner&#8217;s Office issues a formal <strong>Decision Notice</strong> (Reference: IC-567662-H7C3) finding that Frimley Health NHS Foundation Trust breached <strong>Regulation 5(2) of the Environmental Information Regulations 2004 (EIR)</strong> by failing to respond within 20 working days to an information request.<br><br>The EIR request was submitted on <strong>15 June 2026</strong> &#8212; the day before FHFT publicly announced the Frimley Fuel Allotments as its preferred site for the new hospital. The complainant asked for all documentation, confidential meeting notes, environmental reports, traffic and infrastructure reports, and risk maps relating to the site decision, explicitly requesting that FHFT <em>&#8220;please do not hide behind commercial reasons for non disclosure.&#8221;</em><br><br>This is precisely the category of material that HWRA, local residents and campaigners have sought throughout the engagement, and which FHFT has declined to share. The ICO decision confirms the Trust was legally obliged to respond and failed to do so.<br><br>The ICO orders FHFT to provide a substantive response to the request within <strong>30 calendar days</strong> of the Decision Notice (deadline: approximately 12 November 2026). Failure to comply may result in the ICO making written certification to the <strong>High Court</strong> under section 54 of FOIA, which may be treated as <strong>contempt of court</strong>. Either party has 28 days from the date of the notice to appeal to the First-tier Tribunal (Information Rights).<br><br>The Decision Notice is issued on the same day the 17-week public engagement exercise closes &#8212; meaning residents completed their responses without access to the environmental and transport documentation the Trust was legally required to disclose.</div>
+      <div class="entry-source">Source: Information Commissioner&#8217;s Office, Decision Notice IC-567662-H7C3, 13 October 2026 (Environmental Information Regulations 2004, Regulation 5(2))</div>
+    </div>
+  </div>
+
 </div><!-- /y2026 -->
 
 </div><!-- /timeline -->
@@ -1654,14 +1665,16 @@ function toggleSort() {
 
   if (sortedNew) {
     label.textContent = 'Newest first';
-    btn.style.background = '#2c2c2c';
+    btn.style.background = '#5ab87a';
     btn.style.color = '#fff';
-    btn.style.borderColor = '#2c2c2c';
+    btn.style.borderColor = '#5ab87a';
+    btn.querySelector('svg').style.stroke = '#fff';
   } else {
     label.textContent = 'Oldest first';
     btn.style.background = '#fff';
     btn.style.color = '#2c2c2c';
-    btn.style.borderColor = '#d5d5d0';
+    btn.style.borderColor = '#5ab87a';
+    btn.querySelector('svg').style.stroke = '#5ab87a';
   }
 }
 </script>
