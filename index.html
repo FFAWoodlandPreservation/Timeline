@@ -266,6 +266,14 @@ header h1 strong {
 .entry-body strong { color: #111; }
 .entry-body em { color: #555; }
 .entry-source { font-size: 0.69rem; color: #c0c0c0; font-style:italic; margin-top:5px; line-height:1.35; overflow-wrap: break-word; word-break: break-word; }
+.entry-share { display:flex; align-items:center; gap:5px; margin-top:9px; padding-top:8px; border-top:1px solid #eeeeed; }
+.entry-share-label { font-size:10px; color:#c0c0c0; margin-right:2px; }
+.entry-share a, .entry-share button { display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; border-radius:4px; font-size:13px; text-decoration:none; border:none; cursor:pointer; opacity:0.55; transition:opacity 0.15s; }
+.entry-share a:hover, .entry-share button:hover { opacity:1; }
+.entry-share .es-wa { background:#25d366; color:#fff; }
+.entry-share .es-fb { background:#1877f2; color:#fff; }
+.entry-share .es-x { background:#000; color:#fff; }
+.entry-share .es-copy { background:#eeeeec; color:#666; }
 
 /* LEFT: date left, content right */
 .entry.left .date-panel    { grid-column:1; grid-row:1; text-align:right; padding-right:16px; }
@@ -1676,6 +1684,51 @@ function toggleSort() {
     btn.style.borderColor = '#5ab87a';
     btn.querySelector('svg').style.stroke = '#5ab87a';
   }
+}
+</script>
+
+<!-- ══ SHARE ENHANCEMENTS ══ -->
+<script>
+(function() {
+  var BASE_URL = 'https://ffawoodlandpreservation.github.io/Timeline';
+  var entries = document.querySelectorAll('.timeline .entry');
+  var count = entries.length;
+
+  // Option C: Update WhatsApp bar link with live entry count + stronger message
+  var waBar = document.querySelector('a[data-goatcounter-click="share-whatsapp"]');
+  if (waBar) {
+    var msg = 'Document events about the proposed development of Frimley Fuel Allotments - FOI responses, committee minutes, publications all in one place: ' + BASE_URL;
+    waBar.href = 'https://wa.me/?text=' + encodeURIComponent(msg);
+  }
+
+  // Option D: Inject per-entry share strip
+  entries.forEach(function(entry, i) {
+    var id = 'entry-' + (i + 1);
+    entry.id = id;
+    var anchor = BASE_URL + '#' + id;
+    var titleEl = entry.querySelector('.entry-title');
+    var title = titleEl ? titleEl.textContent.trim() : 'Frimley Fuel Allotments timeline';
+    var waText = title + ' — Frimley Fuel Allotments: ' + anchor;
+    var xText = title + ' — Frimley Fuel Allotments timeline';
+    var shareDiv = document.createElement('div');
+    shareDiv.className = 'entry-share';
+    shareDiv.innerHTML =
+      '<span class="entry-share-label">Share:</span>' +
+      '<a href="https://wa.me/?text=' + encodeURIComponent(waText) + '" target="_blank" rel="noopener" class="es-wa" title="Share on WhatsApp" data-goatcounter-click="share-entry-wa" data-goatcounter-title="Share entry: WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>' +
+      '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(anchor) + '" target="_blank" rel="noopener" class="es-fb" title="Share on Facebook" data-goatcounter-click="share-entry-fb" data-goatcounter-title="Share entry: Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>' +
+      '<a href="https://twitter.com/intent/tweet?url=' + encodeURIComponent(anchor) + '&text=' + encodeURIComponent(xText) + '" target="_blank" rel="noopener" class="es-x" title="Share on X / Twitter" data-goatcounter-click="share-entry-x" data-goatcounter-title="Share entry: X"><i class="ti ti-brand-x" aria-hidden="true"></i></a>' +
+      '<button class="es-copy" title="Copy link to this entry" onclick="copyEntryLink(this,\'' + anchor + '\')"><i class="ti ti-link" aria-hidden="true"></i></button>';
+    var panel = entry.querySelector('.content-panel');
+    if (panel) panel.appendChild(shareDiv);
+  });
+})();
+
+function copyEntryLink(btn, url) {
+  navigator.clipboard.writeText(url).then(function() {
+    var icon = btn.querySelector('i');
+    icon.className = 'ti ti-check';
+    setTimeout(function() { icon.className = 'ti ti-link'; }, 1500);
+  });
 }
 </script>
 
