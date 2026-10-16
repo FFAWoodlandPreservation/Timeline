@@ -1809,9 +1809,9 @@ function toggleSort() {
     shareDiv.className = 'entry-share';
     shareDiv.innerHTML =
       '<span class="entry-share-label">Share:</span>' +
-      '<a href="https://wa.me/?text=' + encodeURIComponent(waText) + '" target="_blank" rel="noopener" class="es-wa" title="Share on WhatsApp" data-goatcounter-click="share-entry-wa" data-goatcounter-title="Share entry: WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>' +
-      '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(anchor) + '" target="_blank" rel="noopener" class="es-fb" title="Share on Facebook" data-goatcounter-click="share-entry-fb" data-goatcounter-title="Share entry: Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>' +
-      '<a href="https://twitter.com/intent/tweet?url=' + encodeURIComponent(anchor) + '&text=' + encodeURIComponent(xText) + '" target="_blank" rel="noopener" class="es-x" title="Share on X / Twitter" data-goatcounter-click="share-entry-x" data-goatcounter-title="Share entry: X"><i class="ti ti-brand-x" aria-hidden="true"></i></a>' +
+      '<a href="https://wa.me/?text=' + encodeURIComponent(waText) + '" target="_blank" rel="noopener" class="es-wa" title="Share on WhatsApp" data-goatcounter-click="share-entry-wa-' + id + '" data-goatcounter-title="Share entry: WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>' +
+      '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(anchor) + '" target="_blank" rel="noopener" class="es-fb" title="Share on Facebook" data-goatcounter-click="share-entry-fb-' + id + '" data-goatcounter-title="Share entry: Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>' +
+      '<a href="https://twitter.com/intent/tweet?url=' + encodeURIComponent(anchor) + '&text=' + encodeURIComponent(xText) + '" target="_blank" rel="noopener" class="es-x" title="Share on X / Twitter" data-goatcounter-click="share-entry-x-' + id + '" data-goatcounter-title="Share entry: X"><i class="ti ti-brand-x" aria-hidden="true"></i></a>' +
       '<button class="es-copy" title="Copy link to this entry" onclick="copyEntryLink(this,\'' + anchor + '\')"><i class="ti ti-link" aria-hidden="true"></i></button>';
     var panel = entry.querySelector('.content-panel');
     if (panel) panel.appendChild(shareDiv);
